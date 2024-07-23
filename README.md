@@ -30,8 +30,7 @@ relationship requested. Our gemini logic uses helper function get_gemini_complet
 Gemini service.
 
 A detailed description of how to carry out
-1. To retrieve each webpage we used the reference code at https://github.com/googleapis/google-apipython-
-client/blob/main/samples/customsearch/main.py That is, we invokes req = requests.get(url,
+1. To retrieve each webpage we used the reference code at https://github.com/googleapis/google-apipython-client/blob/main/samples/customsearch/main.py That is, we invokes req = requests.get(url,
 headers) On failure to load a page, we just continue on to the next page
 2. To extract the actual plain text, we invoke our helper function text_from_html(), which calls
 BeautifulSoup() on the body. The helper function then extracts and joins everything in the "soup" where
