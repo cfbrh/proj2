@@ -1,0 +1,447 @@
+python3 main.py -spanbert Google_Custom_Search_Engine_JSON_API_Key Engine_ID 2 0.7 "bill gates microsoft" 10
+Loading pre-trained spanBERT from ./pretrained_spanbert
+____
+Parameters:
+Client key      = 
+Engine key      = 
+Gemini key      = 
+Method          = spanbert
+Relation        = Work_For
+Threshold       = 0.7
+Query           = bill gates microsoft
+# of Tuples     = 10
+Loading necessary libraries; This should take a minute or so ...)
+=========== Iteration: 0 - Query: bill gates microsoft ===========
+len(items) 10
+URL ( 1 / 10): https://en.wikipedia.org/wiki/Bill_Gates
+        Fetching text from url ...
+        Webpage length (num characters): 10000
+        Annotating the webpage using spacy...
+        Extracted 60 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+        Processed 0 / 60 sentences
+
+        Processed 5 / 60 sentences
+
+        Processed 10 / 60 sentences
+
+        Processed 15 / 60 sentences
+
+        Processed 20 / 60 sentences
+
+        Processed 25 / 60 sentences
+
+        Processed 30 / 60 sentences
+                === Extracted Relation ===
+                Input tokens: ['he', 'and', 'Allen', 'founded', 'Microsoft', 'in', 'Albuquerque', ',']
+                Output Confidence: 0.9881678223609924 ; Subject: Allen ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========
+
+        Processed 35 / 60 sentences
+
+        Processed 40 / 60 sentences
+                === Extracted Relation ===
+                Input tokens: ['he', 'was', 'surpassed', 'by', 'Amazon', 'founder', 'Jeff', 'Bezos', ',', 'who', 'had', 'an', 'estimated', 'net', 'worth', 'of', 'US$', '90.6', '\xa0', 'billion', 'compared', 'to', 'Gates', "'s", 'net', 'worth', 'of', 'US$', '89.9', '\xa0', 'billion', 'at', 'the', 'time', '.']
+                Output Confidence: 0.9505001902580261 ; Subject: Jeff Bezos ; Object: Gates ;
+                Adding to set of extracted relations
+                ==========
+
+        Processed 45 / 60 sentences
+
+        Processed 50 / 60 sentences
+
+        Processed 55 / 60 sentences
+        Extracted annotations for  2  out of total  60  sentences
+        Relations extracted from this website: 2 (Overall: 2 )
+URL ( 2 / 10): https://twitter.com/BillGates
+        Fetching text from url ...
+        Webpage length (num characters): 272
+        Annotating the webpage using spacy...
+        Extracted 4 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+        Processed 0 / 4 sentences
+        Extracted annotations for  0  out of total  4  sentences
+        Relations extracted from this website: 0 (Overall: 0 )
+URL ( 3 / 10): https://www.instagram.com/thisisbillgates/
+        Fetching text from url ...
+        Webpage length (num characters): 0
+        Annotating the webpage using spacy...
+        Extracted 0 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+        Extracted annotations for  0  out of total  0  sentences
+        Relations extracted from this website: 0 (Overall: 0 )
+URL ( 4 / 10): https://news.microsoft.com/tag/bill-gates/
+        Fetching text from url ...
+URL https://news.microsoft.com/tag/bill-gates/ failed on Exception [HTTPSConnectionPool(host='news.microsoft.com', port=443): Max retries exceeded with url: /tag/bill-gates/?Access-Control-Allow-Origin=%2A&Access-Control-Allow-Methods=GET&Access-Control-Allow-Headers=Content-Type&Access-Control-Max-Age=3600&User-Agent=Mozilla%2F5.0+%28X11%3B+Ubuntu%3B+Linux+x86_64%3B+rv%3A52.0%29+Gecko%2F20100101+Firefox%2F52.0 (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1129)')))].  Continuing on to next url.
+URL ( 5 / 10): https://www.britannica.com/biography/Bill-Gates
+        Fetching text from url ...
+        Webpage length (num characters): 10000
+        Annotating the webpage using spacy...
+        Extracted 63 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+        Processed 0 / 63 sentences
+
+        Processed 5 / 63 sentences
+
+        Processed 10 / 63 sentences
+                === Extracted Relation ===
+                Input tokens: ['Society', ' ', 'Bill', 'Gates', '  ', 'American', 'computer', 'programmer', ',', 'businessman', ',', 'and', 'philanthropist', '    ', 'Actions', '    ', 'Cite', '    ', 'verified', 'Cite', ' ']
+                Output Confidence: 0.9839500784873962 ; Subject: Bill Gates ; Object: Actions      ;
+                Adding to set of extracted relations
+                ==========
+
+        Processed 15 / 63 sentences
+
+        Processed 20 / 63 sentences
+
+        Processed 25 / 63 sentences
+
+        Processed 30 / 63 sentences
+
+        Processed 35 / 63 sentences
+
+        Processed 40 / 63 sentences
+                === Extracted Relation ===
+                Input tokens: ['Bill', 'Gates', 'cofounded', 'Microsoft', 'Corporation', ',']
+                Output Confidence: 0.9180271029472351 ; Subject: Bill Gates ; Object: Microsoft Corporation ;
+                Adding to set of extracted relations
+                ==========
+
+        Processed 45 / 63 sentences
+                === Extracted Relation ===
+                Input tokens: ['Bill', 'Gates', 'founded', 'the', 'software', 'company', 'Microsoft', 'Corporation', 'with', 'his', 'friend', 'Paul', 'Allen', '.']
+                Output Confidence: 0.9868191480636597 ; Subject: Bill Gates ; Object: Microsoft Corporation ;
+                Adding to set of extracted relations
+                ==========
+                === Extracted Relation ===
+                Input tokens: ['Bill', 'Gates', '(', 'born', 'October', '28', ',', '1955', ',', 'Seattle', ',', 'Washington', ',', 'U.S.', ')', 'is', 'an', 'American', 'computer', 'programmer', 'and', 'entrepreneur', 'who', 'cofounded', 'Microsoft', 'Corporation', ',']
+                Output Confidence: 0.9791732430458069 ; Subject: Bill Gates ; Object: Microsoft Corporation ;
+                Duplicate with lower or equal confidence than existing record. Ignoring this.
+                ==========
+
+        Processed 50 / 63 sentences
+
+        Processed 55 / 63 sentences
+
+        Processed 60 / 63 sentences
+        Extracted annotations for  4  out of total  63  sentences
+        Relations extracted from this website: 3 (Overall: 4 )
+URL ( 6 / 10): https://www.linkedin.com/in/williamhgates
+        Fetching text from url ...
+        Webpage length (num characters): 0
+        Annotating the webpage using spacy...
+        Extracted 0 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+        Extracted annotations for  0  out of total  0  sentences
+        Relations extracted from this website: 0 (Overall: 0 )
+URL ( 7 / 10): https://www.forbes.com/profile/bill-gates/
+        Fetching text from url ...
+        Webpage length (num characters): 6954
+        Annotating the webpage using spacy...
+        Extracted 36 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+        Processed 0 / 36 sentences
+
+        Processed 5 / 36 sentences
+
+        Processed 10 / 36 sentences
+
+        Processed 15 / 36 sentences
+                === Extracted Relation ===
+                Input tokens: ['By', 'Paul', 'Tassi', 'Senior', 'Contributor', 'Mar', '21', ',', '2024', 'House', 'Lawmakers', 'Advance', 'Hawaii', 'Marijuana', 'Legalization', 'Bill', 'A', 'bill', 'to', 'legalize', 'recreational', 'marijuana', 'in', 'Hawaii', 'has', 'been', 'approved', 'by', 'two', 'House', 'committees', 'after', 'passing', 'in', 'the', 'Senate', 'earlier', 'this', 'month', '.']
+                Output Confidence: 0.9897068738937378 ; Subject: Paul Tassi ; Object: House ;
+                Adding to set of extracted relations
+                ==========
+                === Extracted Relation ===
+                Input tokens: ['By', 'Paul', 'Tassi', 'Senior', 'Contributor', 'Mar', '21', ',', '2024', 'House', 'Lawmakers', 'Advance', 'Hawaii', 'Marijuana', 'Legalization', 'Bill', 'A', 'bill', 'to', 'legalize', 'recreational', 'marijuana', 'in', 'Hawaii', 'has', 'been', 'approved', 'by', 'two', 'House', 'committees', 'after', 'passing', 'in', 'the', 'Senate', 'earlier', 'this', 'month', '.']
+                Output Confidence: 0.981670618057251 ; Subject: Paul Tassi ; Object: House ;
+                Duplicate with lower or equal confidence than existing record. Ignoring this.
+                ==========
+                === Extracted Relation ===
+                Input tokens: ['By', 'Paul', 'Tassi', 'Senior', 'Contributor', 'Mar', '21', ',', '2024', 'House', 'Lawmakers', 'Advance', 'Hawaii', 'Marijuana', 'Legalization', 'Bill', 'A', 'bill', 'to', 'legalize', 'recreational', 'marijuana', 'in', 'Hawaii', 'has', 'been', 'approved', 'by', 'two', 'House', 'committees', 'after', 'passing', 'in', 'the', 'Senate', 'earlier', 'this', 'month', '.']
+                Output Confidence: 0.9279480576515198 ; Subject: Paul Tassi ; Object: Senate ;
+                Adding to set of extracted relations
+                ==========
+
+        Processed 20 / 36 sentences
+                === Extracted Relation ===
+                Input tokens: ['By', 'Amy', 'Feldman', 'Forbes', 'Staff', 'Mar', '4', ',', '2024', 'Bob', 'Moses', 'Preached', 'The', 'Power', 'Of', 'Math', 'Bill', 'Gates', ',', 'the', 'Microsoft', 'founder', ',']
+                Output Confidence: 0.9878812432289124 ; Subject: Amy Feldman ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========
+                === Extracted Relation ===
+                Input tokens: ['2024', 'Bob', 'Moses', 'Preached', 'The', 'Power', 'Of', 'Math', 'Bill', 'Gates', ',', 'the', 'Microsoft', 'founder', ',']
+                Output Confidence: 0.9881988167762756 ; Subject: Bob Moses ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========
+
+        Processed 25 / 36 sentences
+
+        Processed 30 / 36 sentences
+                === Extracted Relation ===
+                Input tokens: ['By', 'Alan', 'Ohnsman', 'Forbes', 'Staff', 'Jan', '25', ',', '2024', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'Chief', 'Calls', 'On', 'More', 'Billionaires', 'To', 'Do', 'More', 'Philanthropy', 'Extreme', 'poverty', 'has', 'increased', '.']
+                Output Confidence: 0.9916001558303833 ; Subject: Alan Ohnsman Forbes ; Object: Bill & Melinda Gates Foundation ;
+                Adding to set of extracted relations
+                ==========
+
+        Processed 35 / 36 sentences
+        Extracted annotations for  6  out of total  36  sentences
+        Relations extracted from this website: 5 (Overall: 6 )
+URL ( 8 / 10): https://answers.microsoft.com/en-us/outlook_com/forum/all/microsoft-and-bill-gates-are-so-damn-screwed-up/cd76d0e2-ece4-45db-8886-00d557d593e2
+        Fetching text from url ...
+        Webpage length (num characters): 3
+        Annotating the webpage using spacy...
+        Extracted 1 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+        Processed 0 / 1 sentences
+        Extracted annotations for  0  out of total  1  sentences
+        Relations extracted from this website: 0 (Overall: 0 )
+URL ( 9 / 10): https://www.gatesnotes.com/Home
+        Fetching text from url ...
+        Webpage length (num characters): 144
+        Annotating the webpage using spacy...
+        Extracted 2 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+        Processed 0 / 2 sentences
+        Extracted annotations for  0  out of total  2  sentences
+        Relations extracted from this website: 0 (Overall: 0 )
+URL ( 10 / 10): https://www.facebook.com/BillGates/
+        Fetching text from url ...
+        Webpage length (num characters): 26
+        Annotating the webpage using spacy...
+        Extracted 1 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+        Processed 0 / 1 sentences
+        Extracted annotations for  0  out of total  1  sentences
+        Relations extracted from this website: 0 (Overall: 0 )
+=========== Iteration: 1 - Query: Alan Ohnsman Forbes Bill & Melinda Gates Foundation ===========
+len(items) 10
+URL ( 2 / 10): https://www.forbesmiddleeast.com/brandvoice/efs-facilities-services-group
+        Fetching text from url ...
+        Webpage length (num characters): 10000
+        Annotating the webpage using spacy...
+        Extracted 20 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+        Processed 0 / 20 sentences
+                === Extracted Relation ===
+                Input tokens: ['By', 'Thomas', 'Brewster', '   ', 'Forbes', 'US', 'Staff', 'Business', 'Online', 'Luggage', 'Startup', 'Away', 'CEO', 'Stepping', 'Down', 'By', 'Amy', 'Feldman', '   ', 'Forbes', 'US', 'Staff', 'Economy', 'Impact', 'Of', 'Strong', 'Dollar', ',']
+                Output Confidence: 0.6868725419044495 ; Subject: Stepping Down ; Object: Forbes ;
+                Confidence is lower than threshold confidence. Ignoring this.
+                ==========
+
+        Processed 5 / 20 sentences
+                === Extracted Relation ===
+                Input tokens: ['By', 'Nathan', 'Vardi', '   ', 'Forbes', 'US', 'Staff', 'Startups', '&']
+                Output Confidence: 0.6433650851249695 ; Subject: Nathan Vardi ; Object: Forbes ;
+                Confidence is lower than threshold confidence. Ignoring this.
+                ==========
+
+        Processed 10 / 20 sentences
+
+        Processed 15 / 20 sentences
+                === Extracted Relation ===
+                Input tokens: ['Mari', 'Gray', '   ', 'Contributor', 'Business', 'Elisabeth', 'Murdoch', '’s', 'Vertical', 'Networks', 'Sold', 'To', 'Whistle', 'By', 'Dawn', 'Chmielewski', '   ', 'Former', 'Forbes', 'US', 'Staff', 'Startups', '&']
+                Output Confidence: 0.9902451038360596 ; Subject: Elisabeth Murdoch ; Object: Vertical Networks Sold To Whistle By ;
+                Adding to set of extracted relations
+                ==========
+                === Extracted Relation ===
+                Input tokens: ['Hussain', 'Al', 'Jassmi', 'By', 'Samar', 'Khouri', '   ', 'Forbes', 'Middle', 'East', 'Staff', 'Opinion']
+                Output Confidence: 0.9757876396179199 ; Subject: Hussain Al Jassmi ; Object: Forbes Middle East Staff Opinion ;
+                Adding to set of extracted relations
+                ==========
+        Extracted annotations for  4  out of total  20  sentences
+        Relations extracted from this website: 2 (Overall: 4 )
+URL ( 3 / 10): https://www.forbes.com/sites/katiejennings/2022/06/18/9-billion-for-climate-tech-startups-teslas-tough-quarter-and-flooding-in-yellowstone/
+        Fetching text from url ...
+        Webpage length (num characters): 7410
+        Annotating the webpage using spacy...
+        Extracted 52 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+        Processed 0 / 52 sentences
+
+        Processed 5 / 52 sentences
+
+        Processed 10 / 52 sentences
+
+        Processed 15 / 52 sentences
+
+        Processed 20 / 52 sentences
+
+        Processed 25 / 52 sentences
+                === Extracted Relation ===
+                Input tokens: ['led', 'by', 'Indian', 'billionaire', 'Gautam', 'Adani', ',', 'has', 'struck', 'a', 'deal', 'with', 'TotalEnergies', 'in', 'which', 'the', 'French', 'energy', 'company', 'will', 'acquire', 'a', '25', '%', 'minority', 'interest', 'in', 'Adani', 'New', 'Industries', '.']
+                Output Confidence: 0.6167358160018921 ; Subject: Gautam Adani ; Object: Adani New Industries ;
+                Confidence is lower than threshold confidence. Ignoring this.
+                ==========
+
+        Processed 30 / 52 sentences
+
+        Processed 35 / 52 sentences
+
+        Processed 40 / 52 sentences
+                === Extracted Relation ===
+                Input tokens: ['That', 'comes', 'as', 'Elon', 'Musk', 'makes', 'good', 'on', 'his', 'promise', 'to', 'cut', 'about', '10', '%', 'of', 'Tesla', '’s', 'staff', 'and', 'the', 'company', 'works', 'to', 'get', 'production', 'in', 'China', 'back', 'to', 'normal', '.']
+                Output Confidence: 0.9826129674911499 ; Subject: Elon Musk ; Object: Tesla ;
+                Adding to set of extracted relations
+                ==========
+
+        Processed 45 / 52 sentences
+
+        Processed 50 / 52 sentences
+        Extracted annotations for  2  out of total  52  sentences
+        Relations extracted from this website: 1 (Overall: 2 )
+URL ( 4 / 10): https://www.coursesidekick.com/management/38029
+        Fetching text from url ...
+        Webpage length (num characters): 83
+        Annotating the webpage using spacy...
+        Extracted 2 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+        Processed 0 / 2 sentences
+        Extracted annotations for  0  out of total  2  sentences
+        Relations extracted from this website: 0 (Overall: 0 )
+URL ( 5 / 10): https://www.forbes.com/sites/alanohnsman/2022/07/16/california-bullet-train-gets-42-billion-green-light-for-first-phase-while-bigger-challenges-loom/
+        Fetching text from url ...
+        Webpage length (num characters): 10000
+        Annotating the webpage using spacy...
+        Extracted 68 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+        Processed 0 / 68 sentences
+
+        Processed 5 / 68 sentences
+
+        Processed 10 / 68 sentences
+
+        Processed 15 / 68 sentences
+                === Extracted Relation ===
+                Input tokens: ['said', 'Karen', 'Philbrick', ',', 'executive', 'director', 'of', 'San', 'Jose', 'State', 'University', '’s', 'Mineta', 'Transportation', 'Institute', '.']
+                Output Confidence: 0.9927015900611877 ; Subject: Karen Philbrick ; Object: San Jose State University’s ;
+                Adding to set of extracted relations
+                ==========
+                === Extracted Relation ===
+                Input tokens: ['said', 'Karen', 'Philbrick', ',', 'executive', 'director', 'of', 'San', 'Jose', 'State', 'University', '’s', 'Mineta', 'Transportation', 'Institute', '.']
+                Output Confidence: 0.9935814142227173 ; Subject: Karen Philbrick ; Object: Mineta Transportation Institute ;
+                Adding to set of extracted relations
+                ==========
+
+        Processed 20 / 68 sentences
+                === Extracted Relation ===
+                Input tokens: ['Executive', 'Director', 'Karen', 'Philbrick', ',', 'Mineta', 'Transportation', 'Institute', 'Cedar', 'Viaduct', ',']
+                Output Confidence: 0.8386078476905823 ; Subject: Karen Philbrick ; Object: Mineta Transportation Institute ;
+                Duplicate with lower or equal confidence than existing record. Ignoring this.
+                ==========
+
+        Processed 25 / 68 sentences
+
+        Processed 30 / 68 sentences
+
+        Processed 35 / 68 sentences
+
+        Processed 40 / 68 sentences
+
+        Processed 45 / 68 sentences
+
+        Processed 50 / 68 sentences
+
+        Processed 55 / 68 sentences
+
+        Processed 60 / 68 sentences
+
+        Processed 65 / 68 sentences
+        Extracted annotations for  3  out of total  68  sentences
+        Relations extracted from this website: 2 (Overall: 3 )
+URL ( 6 / 10): https://www.scribd.com/document/490721993/magzine-forbes-pdf
+        Fetching text from url ...
+        Webpage length (num characters): 6564
+        Annotating the webpage using spacy...
+        Extracted 35 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+        Processed 0 / 35 sentences
+
+        Processed 5 / 35 sentences
+
+        Processed 10 / 35 sentences
+
+        Processed 15 / 35 sentences
+
+        Processed 20 / 35 sentences
+
+        Processed 25 / 35 sentences
+
+        Processed 30 / 35 sentences
+        Extracted annotations for  0  out of total  35  sentences
+        Relations extracted from this website: 0 (Overall: 0 )
+URL ( 7 / 10): https://www.forbes.com/forbes-400/
+        Fetching text from url ...
+        Webpage length (num characters): 356
+        Annotating the webpage using spacy...
+        Extracted 3 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+        Processed 0 / 3 sentences
+        Extracted annotations for  0  out of total  3  sentences
+        Relations extracted from this website: 0 (Overall: 0 )
+URL ( 8 / 10): https://www.collegesidekick.com/study-docs/750184
+        Fetching text from url ...
+        Webpage length (num characters): 83
+        Annotating the webpage using spacy...
+        Extracted 2 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+        Processed 0 / 2 sentences
+        Extracted annotations for  0  out of total  2  sentences
+        Relations extracted from this website: 0 (Overall: 0 )
+URL ( 9 / 10): https://www.nhsconfed.org/system/files/media/International-crisis-led-innovation.pdf
+        Fetching text from url ...
+Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+        Webpage length (num characters): 10000
+        Annotating the webpage using spacy...
+        Extracted 38 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+        Processed 0 / 38 sentences
+
+        Processed 5 / 38 sentences
+
+        Processed 10 / 38 sentences
+
+        Processed 15 / 38 sentences
+
+        Processed 20 / 38 sentences
+
+        Processed 25 / 38 sentences
+
+        Processed 30 / 38 sentences
+
+        Processed 35 / 38 sentences
+        Extracted annotations for  0  out of total  38  sentences
+        Relations extracted from this website: 0 (Overall: 0 )
+URL ( 10 / 10): https://credohirestorage1.blob.core.windows.net/strapi-credo/assets/Forbes%20India%201st%20Dec%202023.pdf
+        Fetching text from url ...
+Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+        Webpage length (num characters): 10000
+        Annotating the webpage using spacy...
+        Extracted 23 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+        Processed 0 / 23 sentences
+
+        Processed 5 / 23 sentences
+
+        Processed 10 / 23 sentences
+
+        Processed 15 / 23 sentences
+
+        Processed 20 / 23 sentences
+        Extracted annotations for  0  out of total  23  sentences
+        Relations extracted from this website: 0 (Overall: 0 )
+================== ALL RELATIONS for per:employee_of ( 14 ) =================
+Confidence: 0.9935814142227173          | Subject: Karen Philbrick              | Object: Mineta Transportation Institute
+Confidence: 0.9927015900611877          | Subject: Karen Philbrick              | Object: San Jose State University’s
+Confidence: 0.9916001558303833          | Subject: Alan Ohnsman Forbes          | Object: Bill & Melinda Gates Foundation
+Confidence: 0.9902451038360596          | Subject: Elisabeth Murdoch            | Object: Vertical Networks Sold To Whistle By
+Confidence: 0.9897068738937378          | Subject: Paul Tassi           | Object: House
+Confidence: 0.9881988167762756          | Subject: Bob Moses            | Object: Microsoft
+Confidence: 0.9881678223609924          | Subject: Allen                | Object: Microsoft
+Confidence: 0.9878812432289124          | Subject: Amy Feldman          | Object: Microsoft
+Confidence: 0.9868191480636597          | Subject: Bill Gates           | Object: Microsoft Corporation
+Confidence: 0.9839500784873962          | Subject: Bill Gates           | Object: Actions     
+Confidence: 0.9826129674911499          | Subject: Elon Musk            | Object: Tesla
+Confidence: 0.9757876396179199          | Subject: Hussain Al Jassmi            | Object: Forbes Middle East Staff Opinion
+Confidence: 0.9505001902580261          | Subject: Jeff Bezos           | Object: Gates
+Confidence: 0.9279480576515198          | Subject: Paul Tassi           | Object: Senate
+Total # of iterations = 2
